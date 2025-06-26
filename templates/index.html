@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Housing Trends | Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 15px 30px;
+            color: white;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: url('/static/housing.webp') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            max-width: 800px;
+            line-height: 1.4;
+        }
+
+        .hero button {
+            background: orange;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero button:hover {
+            background: darkorange;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 26px;
+                padding: 0 15px;
+            }
+
+            .nav-links {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .nav-links a {
+                margin: 10px 10px 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+        <h1>Housing Trends</h1>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/story">Story</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+<h2 style="
+  background: linear-gradient(to right, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+">
+  VISUALIZING HOUSING SALES TRENDS AND ITS PRICES
+</h2>        
+        <button onclick="window.location.href='/about'">GET STARTED</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; Visualizing Housing Market Trends| | All rights reserved.
+    </footer>
+
+</body>
+</html>
+
